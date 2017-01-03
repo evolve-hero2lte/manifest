@@ -9,8 +9,8 @@
 	   fetch="https://github.com/LineageOS"
 	   revision="cm-14.1" />
 
-  <remote  name="deed"
-	   fetch="https://github.com/deedwar"
+  <remote  name="evolve"
+	   fetch="https://github.com/evolve-hero2lte"
 	   revision="ng7.1" />
 
   <remote  name="slim"
@@ -18,15 +18,15 @@
 	   revision="ng7.1" />
 
   <!-- Device Trees -->
-  <project path="device/samsung/universal8890" name="android_device_samsung_universal8890" remote="deed" />
+  <project path="device/samsung/universal8890" name="android_device_samsung_universal8890" remote="evolve" />
   <!-- project path="device/samsung/herolte" name="android_device_samsung_herolte" remote="8890dev" /-->
-  <project path="device/samsung/hero2lte" name="android_device_samsung_hero2lte" remote="8890dev" />
+  <project path="device/samsung/hero2lte" name="android_device_samsung_hero2lte" remote="evolve" />
 
   <!-- Kernel -->
-  <project path="kernel/samsung/universal8890" name="android_kernel_samsung_universal8890" remote="8890dev" />
+  <project path="kernel/samsung/universal8890" name="android_kernel_samsung_universal8890" remote="evolve" />
 
   <!-- Vendor -->
-  <project path="vendor/samsung/universal8890" name="android_vendor_samsung_universal8890" remote="8890dev" />
+  <project path="vendor/samsung/universal8890" name="android_vendor_samsung_universal8890" remote="evolve" />
 
   <!-- Hardware -->
   <project path="hardware/samsung" name="android_hardware_samsung" remote="lin" />
