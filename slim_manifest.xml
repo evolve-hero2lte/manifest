@@ -7,16 +7,20 @@
 
   <remote  name="lin"
 	   fetch="https://github.com/LineageOS"
-revision="cm-14.1" />
+	   revision="cm-14.1" />
+
+  <remote  name="deed"
+	   fetch="https://github.com/deedwar"
+	   revision="ng7.1" />
 
   <remote  name="slim"
 	   fetch="https://github.com/SlimRoms"
 	   revision="ng7.1" />
 
   <!-- Device Trees -->
-  <project path="device/samsung/universal8890" name="android_device_samsung_universal8890" remote="8890dev" />
+  <project path="device/samsung/universal8890" name="android_device_samsung_universal8890" remote="deed" />
   <!-- project path="device/samsung/herolte" name="android_device_samsung_herolte" remote="8890dev" /-->
-  <!-- project path="device/samsung/hero2lte" name="android_device_samsung_hero2lte" remote="8890dev" /-->
+  <project path="device/samsung/hero2lte" name="android_device_samsung_hero2lte" remote="8890dev" />
 
   <!-- Kernel -->
   <project path="kernel/samsung/universal8890" name="android_kernel_samsung_universal8890" remote="8890dev" />
@@ -25,7 +29,7 @@ revision="cm-14.1" />
   <project path="vendor/samsung/universal8890" name="android_vendor_samsung_universal8890" remote="8890dev" />
 
   <!-- Hardware -->
-  <project path="hardware/samsung" name="hardware_samsung" remote="lin" />
+  <project path="hardware/samsung" name="android_hardware_samsung" remote="lin" />
   <project path="hardware/samsung_slsi-cm/exynos" name="android_hardware_samsung_slsi-cm_exynos" remote="8890dev" />
   <project path="hardware/samsung_slsi-cm/exynos5" name="android_hardware_samsung_slsi-cm_exynos5" remote="lin" />
   <project path="hardware/samsung_slsi-cm/openmax" name="android_hardware_samsung_slsi-cm_openmax" remote="lin" />
