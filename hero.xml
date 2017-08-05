@@ -1,0 +1,25 @@
+<manifest>
+<remote name="8890dev" fetch="https://github.com/8890dev" revision="nougat"/>
+<remote name="evolve" fetch="https://github.com/evolve-hero2lte" revision="rr"/>
+<remote name="emotion" fetch="https://github.com/" revision="refs/heads/nougat"/>
+<!--  Device Trees  -->
+<project path="device/samsung/hero-common" name="android_device_samsung_hero-common" remote="evolve" revision="darkness-alt"/>
+<project path="device/samsung/herolte" name="LineageOS/android_device_samsung_herolte" remote="github" revision="cm-14.1"/>
+<project path="device/samsung/hero2lte" name="android_device_samsung_hero2lte" remote="evolve" revision="darkness"/>
+<!--  Kernel  -->
+<project path="kernel/samsung/universal8890" name="tgpkernel-s7" remote="evolve" revision="emotion"/>
+<!--  Vendor  -->
+<project path="vendor/samsung/hero-common" name="android_vendor_samsung_hero-common" remote="evolve" revision="darkness"/>
+<!--  Hardware  -->
+<project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="cm-14.1"/>
+<project path="hardware/samsung_slsi-cm/exynos" name="LineageOS/android_hardware_samsung_slsi-cm_exynos" remote="github" revision="cm-14.1"/>
+<project path="hardware/samsung_slsi-cm/exynos5" name="LineageOS/android_hardware_samsung_slsi-cm_exynos5" remote="github" revision="cm-14.1"/>
+<project path="hardware/samsung_slsi-cm/openmax" name="LineageOS/android_hardware_samsung_slsi-cm_openmax" remote="github" revision="cm-14.1"/>
+<project path="hardware/samsung_slsi-cm/exynos8890" name="LineageOS/android_hardware_samsung_slsi-cm_exynos8890" remote="github" revision="cm-14.1"/>
+<!--  Change  -->
+<remove-project path="packages/apps/Snap" name="packages_apps_Snap" remote="dnd"/>
+<project path="packages/apps/Snap" remote="emotion" name="EmotionOS/android_packages_apps_Snap"/>
+
+<!--  Kernel Toolchain  -->
+<project path="prebuilts/gcc/linux-x86/aarch64/aarch64-cortex_a53-linux-gnueabi" name="djb77/aarch64-cortex_a53-linux-gnueabi" remote="github" revision="uber" />
+</manifest>
